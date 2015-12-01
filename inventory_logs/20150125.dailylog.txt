@@ -1,0 +1,2 @@
+id	number	count
+0	G10001	-1

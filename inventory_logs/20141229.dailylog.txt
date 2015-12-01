@@ -1,0 +1,5 @@
+id	number	count
+167	G2016	-1
+1	PP0001	20
+2	GBM5108	-2
+3	PP0022	-3

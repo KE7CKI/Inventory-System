@@ -1,0 +1,128 @@
+* {
+ 	font-family:	Times,serif;
+ 	font-size:	1em;
+}
+
+body {
+	width:		1024px;
+	margin:		5px auto;
+	background:	#B8B8B8;
+}
+
+html {
+	background:#000000;
+}
+
+input, textarea, select, button {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+ 
+.appname {
+	text-align:	center;
+	background:	#ffcc00;
+	color:		#000000;
+	font-size:	20pt;
+	padding:	4px;
+}
+
+.fieldname {
+	float:	left;
+	text-align: right;
+	width:	175px;
+}
+
+.main {
+	margin:	5px;
+	min-height: 200px;
+}
+
+.menu {
+	margin:		0;
+	padding:	0;
+	width:		15%;
+	float:		left;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu li a {
+	text-decoration: none;
+	color:	 	 black;
+}
+
+.menu li a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	margin-left: 15%;
+}
+
+.header {
+	font-size: 	15pt;
+	margin:	   	10px;
+	margin-left:	80px;
+}
+
+.partsCheckoutDiv {
+	height:		300px;
+	overflow:	auto;
+}
+
+.partsTable {
+	border-collapse: collapse;
+}
+
+.partsTable th {
+	width: 100px;
+	text-align: left;
+}
+
+.partsTable td {
+	width: 100px;
+	text-align: left;
+}
+
+.alterButtons {
+	float: right;
+}
+
+.sortable {
+	border-collapse: collapse;
+	border-color: 	#909090;
+}
+
+.evenRow {
+	background-color:	#909090;
+}
+
+.available {
+	color:	green;
+}
+
+.unavailable {
+	color:	red;
+}
+
+.exists {
+	color: red;
+}
+
+.partsInAssemblyTable {
+
+}
+
+/*
+.partsInAssemblyTable form tr td input {
+	margin: 0;
+	width: 150px;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+*/

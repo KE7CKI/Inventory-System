@@ -1,0 +1,45 @@
+weigh the colors for part qty:
+	color code the quantity to the number of batches we can build
+	if we need 3 of a part, we should color code the part red
+	
+	example:
+		3 handles for a G2 build, build batches in sets of 9
+		9*3   = 27;	red
+		2*9*3 = 54;	orange
+		3*9*3 = 81;	yellow
+		anything > 81;  grey/white
+
+Assemblies databases
+	A single table containing names of all assemblies assemblies_master_list
+
+	A table for each assembly (by the name in assemblies_master_list) that contains each part and
+the quantity required of that part
+
+Assemblies tab
+	a list of all assemblies (using the assemblies_master_list)
+	
+	create an assembly (adds name to assemblies_master_list)
+	
+	view and edit an assembly (create a table for assembly and add parts to it)
+
+
+The Databases
+	
+	the assemblies database
+		'id' is the id of the completed assembly
+		'number' is the assembly number of the completed assembly -
+the number used as the title of the table containing the parts
+		'description' is the description of the part
+		'count' is the number of assemblies we have in stock
+		'shelf' is the shelf location
+		'bin' is the bin location
+
+	after we insert the assembly into the master list, we need to create a
+table containing all the parts using the following statement:	
+
+	CREATE TABLE `AST0001` (`id` INT(11) NOT NULL AUTO_INCREMENT, `partId` INT(11) NOT NULL, PRIMARY KEY (`id`));
+
+	'AST0001' is ASsemblies Test 0001
+	'id' is the id of the assembly
+	'partId' is the id of the part found in the master_list
+
